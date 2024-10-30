@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#2196f3">
+    <title>Template Tab</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/detalhes.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+
+    <style>
+        .search-bar {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        #search {
+            width: 100%;
+            padding: 10px 40px 10px 15px; /* Espaço para o ícone */
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .icone-busca {
+            position: absolute;
+            right: 15px;
+            font-size: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="view view-main">
+            <div data-name="index" class="page color-theme-blue">
+                <div class="top-nav">
+                    <h1 class="title-logo"><span>Green</span>Tech</h1>
+                    <a href="/carrinho/" class="btn-cart" data-count="0">
+                        <i><i class="ri-shopping-bag-line"></i></i>
+                    </a>
+                </div>
+
+                <!-- Formulário de busca -->
+                <form class="search-bar">
+                    <input id="search" placeholder="O que você procura?" type="text">
+                    <i class="icone-busca ri-search-2-line"></i>
+                </form>
+
+                <!-- Restante do conteúdo -->
+                <div class="page-content">
+                    <!-- Conteúdo aqui -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>
